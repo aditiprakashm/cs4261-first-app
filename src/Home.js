@@ -29,12 +29,16 @@ const Home = () => {
         estimatedItemSize={100}
         renderItem={({item}) => (
             <View style={styles.noteView}>
-                <Text style={styles.noteTitle}>
-                    {item.title}
-                </Text>
-                <Text style={styles.noteDescription}>
-                    {item.note}
-                </Text>
+                <Pressable
+                    onPress={()=> navigation.navigate('Detail', {item})}
+                >
+                    <Text style={styles.noteTitle}>
+                        {item.title}
+                    </Text>
+                    <Text style={styles.noteDescription}>
+                        {item.note}
+                    </Text>
+                </Pressable>
             </View>
         )}
         />
