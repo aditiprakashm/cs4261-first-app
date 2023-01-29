@@ -28,6 +28,21 @@ const Detail = ({route}) => {
         }
     }
 
+    // added feature : delete note
+    const handleDelete = () => {
+        firebase.firestore()
+        .collection('notes')
+        .doc(route.params.item.id)
+        .delete()
+        .then(() => {
+            navigation.navigate('Home');
+        })
+        .catch((error) => {
+            alert(error);
+        })
+    }
+
+
   return (
     <View style={styles.container}>
         <TextInput
@@ -44,6 +59,13 @@ const Detail = ({route}) => {
             multiline={true}
         />
         <View style={styles.buttonView}>
+            <TouchableOpacity
+                style={styles.button}
+                onPress={handleDelete}  
+            >
+                <Text style={styles.buttonText}>Delete</Text>   
+            </TouchableOpacity>
+                
             <TouchableOpacity
                 style={styles.button}
                 onPress={handleUpdate}
@@ -76,7 +98,7 @@ const styles = StyleSheet.create({
     },
     inputNote: {
         fontSixe:18,
-        height:300,
+        height:200,
         width:'97%',
         borderColor: 'gray',
         borderWidth: 1/2,
