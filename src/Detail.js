@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         alignItems:'center',
-        backgroundColor:"#c9f5d9"
+        backgroundColor:"#d1e789"
     },
     inputTitle: {
         fontSize:18,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
         fontSixe:18,
         height:200,
         width:'97%',
-        borderColor: 'gray',
+        borderColor: 'brown',
         borderWidth: 1/2,
         borderRadius:5,
         padding:10
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         marginTop:10
     },
     buttonText:{
-        color:'#fff',
+        color:'#adc',
         fontSize:18
     }
 })

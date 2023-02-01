@@ -18,7 +18,7 @@ export default function App() {
           options={{
             headerTitle: () => <Header name="Notes" />,
             headerStyle: {
-              backgroundColor:'#4c00b0',
+              backgroundColor:'#7cc0d8',
               height:120,
             }
           }}
@@ -27,9 +27,9 @@ export default function App() {
           component={Detail}
           name='Detail'
           options={{
-            headerTitle: () => <Header name="Edit Notes" />,
+            headerTitle: () => <Header name="Edit Note" />,
             headerStyle: {
-              backgroundColor:'#4c00b0',
+              backgroundColor:'#7cc0d8',
               height:120,
             }
           }}

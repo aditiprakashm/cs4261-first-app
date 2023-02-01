@@ -42,7 +42,7 @@ const Home = () => {
             </View>
         )}
         />
-      <Button title='Add Notes' onPress={ () => navigation.navigate('NoteAdd') } /> 
+      <Button title='Jot Down' onPress={ () => navigation.navigate('NoteAdd') } /> 
     </View>
   )
 }
@@ -52,15 +52,15 @@ export default Home
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: '#c9f5d9'
+        backgroundColor: 'pink'
     },
     noteView:{
         flex:1,
-        backgroundColor:'#fff',
+        backgroundColor:'#fef',
         margin:10,
         padding:10,
         borderRadius:10,
-        shadowColor:'red',
+        shadowColor:'green',
         shadowOffset: { width:0, height:2},
         shadowOpacity:0.8,
         shadowRadius:2,
